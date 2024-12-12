@@ -163,10 +163,10 @@ function App() {
       >
         <div className="app">
             <Header />
-            <TxForm />
-            <CreateJettonDemo />
-            <TonProofDemo />
-            <Footer />
+            {/*<TxForm />*/}
+            {/*<CreateJettonDemo />*/}
+            {/*<TonProofDemo />*/}
+            {/*<Footer />*/}
         </div>
       </TonConnectUIProvider>
   )
