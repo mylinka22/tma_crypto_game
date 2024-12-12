@@ -1,0 +1,41 @@
+/* header.scss */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+
+  > span {
+    font-size: 30px;
+    line-height: 34px;
+    color: rgba(102, 170, 238, 0.91);
+    font-weight: bold;
+  }
+
+  .connect-button {
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #1761c4;
+    }
+  }
+}
+
+@media (max-width: 525px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+
+    > *:nth-child(2) {
+      align-self: flex-end;
+    }
+  }
+}
